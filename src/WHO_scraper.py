@@ -10,6 +10,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from src.countries_list import country_list, years_from, years_to
 import os
 os.makedirs("../data/", exist_ok=True)
+os.makedirs("../data2/", exist_ok=True)
+os.makedirs("../data3/", exist_ok=True)
+
 
 options = Options()
 options.add_argument("start-maximized")
@@ -22,7 +25,7 @@ options.add_argument("disable-infobars")
 options.add_argument('--disable-dev-shm-usage')
 
 prefs = {"profile.default_content_settings.popups": 0,
-         "download.default_directory": r"/home/mobin/PycharmProjects/WHO_scraper/data/",
+         "download.default_directory": r"/home/mobin/PycharmProjects/WHO_scraper/data3/",
          # IMPORTANT - ENDING SLASH V IMPORTANT
          "directory_upgrade": True}
 
@@ -89,7 +92,7 @@ class WhoFileDownloader:
             self.driver.implicitly_wait(10)
 
             # clicking report Button
-            sleep(2)
+            sleep(1)
             self.driver.find_element_by_css_selector("#ctl_ViewReport").click()
             print('Display Report Btn clicked')
 
@@ -97,11 +100,11 @@ class WhoFileDownloader:
             print('Error in Selection of Finler: ' + str(e))
 
     def save_record_file(self):
-        sleep(5)
-        try:
 
+        try:
+            sleep(5)
             try:
-                WebDriverWait(self.driver, 10).until(EC.invisibility_of_element_located((By.XPATH,
+                WebDriverWait(self.driver, 15).until(EC.invisibility_of_element_located((By.XPATH,
                                                                                          '//*[@id="ctl_ReportViewer_AsyncWait_Wait"]')))
                 print(f'Waiting...')
             except TimeoutException:
@@ -124,7 +127,7 @@ class WhoFileDownloader:
             print(self.pro_url)
             self.driver.get(self.pro_url)
             self.set_cookies()
-            sleep(3)
+            sleep(1)
             for country in country_list:
                 for year_from, year_to in zip(years_from, years_to):
                     week_to = '53'

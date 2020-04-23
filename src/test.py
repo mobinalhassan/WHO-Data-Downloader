@@ -185,5 +185,13 @@ print(len(countries_list))
 print(countries_list)
 
 
+# import os
+# folder=['Albania', 'Algeria', 'Angola', 'Anguilla', 'Antigua and Barbuda', 'Argentina',
+#                 'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh',
+#                 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Bermuda', 'Bhutan']
+# for n in folder:
+#     os.makedirs(f"../Via country/{n}/", exist_ok=True)
+
+
 
 

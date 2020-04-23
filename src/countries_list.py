@@ -6,7 +6,7 @@ country_list = ['Afghanistan', 'Albania', 'Algeria', 'Angola', 'Anguilla', 'Anti
                 'Costa Rica', "Côte d'Ivoire", 'Croatia', 'Cuba', 'Cyprus', 'Czechia',
                 "Democratic People's Republic of Korea", 'Democratic Republic of the Congo', 'Denmark', 'Dominica',
                 'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador', 'Estonia', 'Ethiopia', 'Fiji', 'Finland',
-                'France', 'French Guiana', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Guadeloupe', 'Guatemala', 'Guinea',
+                'France', 'French Guiana', 'Georgia', 'Germany', 'Gh  ana', 'Greece', 'Guadeloupe', 'Guatemala', 'Guinea',
                 'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran (Islamic Republic of)',
                 'Iraq', 'Ireland', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya',
                 'Kosovo (in accordance with Security Council resolution 1244 (1999))', 'Kuwait', 'Kyrgyzstan',
@@ -21,11 +21,16 @@ country_list = ['Afghanistan', 'Albania', 'Algeria', 'Angola', 'Anguilla', 'Anti
                 'Singapore', 'Slovakia', 'Slovenia', 'South Africa', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan',
                 'Suriname', 'Sweden', 'Switzerland', 'Syrian Arab Republic', 'Tajikistan', 'Thailand', 'Timor-Leste',
                 'Togo', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Turks and Caicos Is.', 'Uganda',
-                'Ukraine', 'United Kingdom of Great Britain and Northern Ireland', 'United Republic of Tanzania',
+                'Ukraine','United Kingdom of Great Britain and Northern Ireland','United Republic of Tanzania',
                 'United States of America', 'Uruguay', 'Uzbekistan', 'Venezuela (Bolivarian Republic of)', 'Viet Nam',
                 'West Bank and Gaza Strip', 'Yemen', 'Zambia']
+
 
 years_from=['1995','2001','2006','2011','2016']
 # years_from=['1995']
 years_to=['2000','2005','2010','2015','2020']
-# years_to=['2000']
+# years_to=['2020']
+
+
+
+

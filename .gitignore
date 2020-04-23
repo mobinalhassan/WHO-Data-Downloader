@@ -17,3 +17,5 @@
 !/commonutils/**
 !/src/notebooks/**/*.ipynb
 #/src/scripts/test.py
+!All_Countries_data.xlsx
+!src/notebook/*
